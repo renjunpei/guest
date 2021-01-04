@@ -12,7 +12,7 @@ def login_action(request):
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
-        # 进行数据校验
+        # 进行数据校验大
         if not all([username, password]):
             # 数据不完整
             return render(request, 'index.html', {'error': '数据不完整'})
