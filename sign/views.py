@@ -9,6 +9,7 @@ def index(request):
 
     return render(request,"index.html")
 
+
 # 登录
 def login_action(request):
     if request.method == "POST":
