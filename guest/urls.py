@@ -20,7 +20,7 @@ from sign import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index',views.index),  # 添加index路径
-    url(r'^accounts/login/$',views.index),
+    url(r'^accounts/login/$',views.index),  # 跳转登录页面
     url(r"login_action",views.login_action),   # 添加登录
     url(r"event_mange",views.event_mange),  #  登录成功页面
 
